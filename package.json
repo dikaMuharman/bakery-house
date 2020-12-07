@@ -1,0 +1,26 @@
+{
+  "name": "bakery-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwind build ./src/tailwind.css -o ./dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dikaMuharman/bakery-house.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dikaMuharman/bakery-house/issues"
+  },
+  "homepage": "https://github.com/dikaMuharman/bakery-house#readme",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.13",
+    "tailwindcss": "^2.0.1"
+  }
+}

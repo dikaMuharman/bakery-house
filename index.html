@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery house</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-background">
+    <!-- Header -->
+    <header class="flex max-h-screen items-start md:items-center">
+      <!-- Nav -->
+      <nav
+        class="flex flex-col md:flex-row justify-between md:items-center p-4 fixed top-0 w-full shadow-md md:shadow-none z-20 bg-background md:px-12 px-8"
+      >
+        <div class="flex justify-between">
+          <a href="#">
+            <img src="./img/logo.svg" alt="logo" class="h-5" />
+          </a>
+          <button class="md:hidden" id="menu-toggle">
+            <img src="./img/menu.svg" alt="menu" />
+          </button>
+        </div>
+        <ul
+          class="hidden md:flex flex-col md:flex-row mt-4 md:mt-0 md:items-center"
+          id="menu"
+        >
+          <li class="md:px-4 py-2 md:py-0 text-gray-600">
+            <a href="#">About</a>
+          </li>
+          <li class="md:px-4 py-2 md:py-0 text-gray-600">
+            <a href="#">Contact</a>
+          </li>
+          <li class="md:px-4 py-2 md:py-0 md:text-gray-600 text-white">
+            <a
+              href="#"
+              class="block bg-primary py-2 md:py-0 text-center rounded-md font-medium md:font-normal md:underline md:bg-transparent"
+              >Sign in</a
+            >
+          </li>
+          <li class="md:px-4 py-2 md:py-0 text-white">
+            <a
+              href="#"
+              class="block bg-secondary py-2 md:px-4 text-center rounded-md font-medium"
+              >Order</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- hero -->
+      <section class="text-gray-700 body-font md:mt-0 md:px-8">
+        <div
+          class="container mx-auto flex px-4 pt-20 md:pt-8 pb-8 md:pb-0 md:flex-row flex-col items-center"
+        >
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center"
+          >
+            <h1
+              class="title-font sm:text-3xl text-2xl mb-4 font-medium text-gray-900"
+            >
+              Best cake for your celebrate
+              <span class="text-secondary">happines</span> just from your phone
+            </h1>
+            <p class="leading-relaxed text-gray-500">
+              The celebrate incomplete without cake. Get delivery cake from your
+              phone anywhere in indonesia. We offer all kinds of cakes for your
+              needs
+            </p>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-full">
+            <img class="w-full h-full" alt="hero" src="./img/hero-img.svg" />
+          </div>
+        </div>
+      </section>
+      <!-- End hero section -->
+    </header>
+    <!-- shop list -->
+    <section class="text-gray-700 body-font md:px-8 px-4 mt-24 sm:mt-0">
+      <div class="container px-5 mx-auto flex flex-col">
+        <h1 class="text-3xl font-medium text-gray-900 mb-10">All product</h1>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2 lg:w-1/4 w-full">
+            <!-- Card -->
+            <div class="bg-white shadow-xl rounded-md w-full">
+              <!-- Card img -->
+              <div>
+                <img src="./img/cake/img-1.png" alt="cake" />
+              </div>
+              <!-- Card content -->
+              <div class="p-4 flex items-end justify-between">
+                <!-- Card desc -->
+                <div>
+                  <h1 class="text-xl font-medium text-gray-900 mb-2">
+                    Chocolate drip cake
+                  </h1>
+                  <p class="text-sm text-gray-500">Price</p>
+                  <span class="text-sm font-medium text-gray-500"
+                    >Start from $19.99</span
+                  >
+                </div>
+                <!-- Card action -->
+                <div>
+                  <a href="#">
+                    <img
+                      src="./img/plus.svg"
+                      alt="add"
+                      class="p-2 bg-primary rounded-lg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 lg:w-1/4 w-full">
+            <!-- Card -->
+            <div class="bg-white shadow-xl rounded-md w-full">
+              <!-- Card img -->
+              <div>
+                <img src="./img/cake/img-2.png" alt="cake" />
+              </div>
+              <!-- Card content -->
+              <div class="p-4 flex items-end justify-between">
+                <!-- Card desc -->
+                <div>
+                  <h1 class="text-xl font-medium text-gray-900 mb-2">
+                    Tiramisu
+                  </h1>
+                  <p class="text-sm text-gray-500">Price</p>
+                  <span class="text-sm font-medium text-gray-500"
+                    >Start from $6.99</span
+                  >
+                </div>
+                <!-- Card action -->
+                <div>
+                  <a href="#">
+                    <img
+                      src="./img/plus.svg"
+                      alt="add"
+                      class="p-2 bg-primary rounded-lg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 lg:w-1/4 w-full">
+            <!-- Card -->
+            <div class="bg-white shadow-xl rounded-md w-full">
+              <!-- Card img -->
+              <div>
+                <img src="./img/cake/img-3.png" alt="cake" />
+              </div>
+              <!-- Card content -->
+              <div class="p-4 flex items-end justify-between">
+                <!-- Card desc -->
+                <div>
+                  <h1 class="text-xl font-medium text-gray-900 mb-2">
+                    Shower cake
+                  </h1>
+                  <p class="text-sm text-gray-500">Price</p>
+                  <span class="text-sm font-medium text-gray-500"
+                    >Start from $15.99</span
+                  >
+                </div>
+                <!-- Card action -->
+                <div>
+                  <a href="#">
+                    <img
+                      src="./img/plus.svg"
+                      alt="add"
+                      class="p-2 bg-primary rounded-lg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 lg:w-1/4 w-full">
+            <!-- Card -->
+            <div class="bg-white shadow-xl rounded-md w-full">
+              <!-- Card img -->
+              <div>
+                <img src="./img/cake/img-4.png" alt="cake" />
+              </div>
+              <!-- Card content -->
+              <div class="p-4 flex items-end justify-between">
+                <!-- Card desc -->
+                <div>
+                  <h1 class="text-xl font-medium text-gray-900 mb-2">Donuts</h1>
+                  <p class="text-sm text-gray-500">Price</p>
+                  <span class="text-sm font-medium text-gray-500"
+                    >Start from $2.99</span
+                  >
+                </div>
+                <!-- Card action -->
+                <div>
+                  <a href="#">
+                    <img
+                      src="./img/plus.svg"
+                      alt="add"
+                      class="p-2 bg-primary rounded-lg"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-right my-8">
+          <a href="#" class="text-md text-gray-500 underline">See more</a>
+        </div>
+      </div>
+    </section>
+    <!-- Fetures -->
+    <section class="text-gray-700 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="text-center mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4"
+          >
+            We can make a custom <span class="text-secondary">cake</span> for
+            you
+          </h1>
+          <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            Just 3 step to order cake
+          </p>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-secondary inline-flex"></div>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <!-- items -->
+          <div
+            class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+          >
+            <div
+              class="w-auto h-auto inline-flex items-center justify-center mb-5 flex-shrink-0"
+            >
+              <img src="./img/img-item-1.svg" alt="" />
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                Select your <span class="text-secondary">cake</span> as you want
+              </h2>
+            </div>
+          </div>
+          <!-- items -->
+          <div
+            class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+          >
+            <div
+              class="w-auto h-auto inline-flex items-center justify-center mb-5 flex-shrink-0"
+            >
+              <img src="./img/img-item-2.svg" alt="" />
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                tell us what kind of
+                <span class="text-secondary">cake</span> you want
+              </h2>
+            </div>
+          </div>
+          <!-- items -->
+          <div
+            class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center"
+          >
+            <div
+              class="w-auto h-auto inline-flex items-center justify-center mb-5 flex-shrink-0"
+            >
+              <img src="./img/img-item-3.svg" alt="" />
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-gray-900 text-lg title-font font-medium mb-3">
+                Orders ready to be delivered
+              </h2>
+            </div>
+          </div>
+        </div>
+        <button
+          class="flex mx-auto mt-16 text-white bg-secondary border-0 py-2 px-8 focus:outline-none hover:bg-pink-800 rounded text-lg"
+        >
+          Order now
+        </button>
+      </div>
+    </section>
+    <!-- branch -->
+    <section class="text-gray-700 body-font">
+      <h1 class="text-center text-3xl font-medium text-gray-900">Meet us at</h1>
+      <div class="container px-5 py-12 mx-auto">
+        <div
+          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+        >
+          <div
+            class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0"
+          >
+            <img src="./img/home.svg" class="w-10" alt="" />
+          </div>
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+              Jakarta
+            </h2>
+            <p class="leading-relaxed text-base">
+              Pasar Bendungan Hilir tanah abang, jakarta pusat 10210
+            </p>
+            <a class="mt-3 text-primary inline-flex items-center" href="#"
+              >Open on maps
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+        >
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+              Bandung
+            </h2>
+            <p class="leading-relaxed text-base">
+              Cihampelas Walk Jln Cipaganti no 160, Kecamatan Coblong Kota
+              bandung, jawa barat 40131
+            </p>
+            <a class="mt-3 text-primary inline-flex items-center" href="#"
+              >Open on maps
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0"
+          >
+            <img src="./img/home.svg" class="w-10" alt="" />
+          </div>
+        </div>
+        <div
+          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+        >
+          <div
+            class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0"
+          >
+            <img src="./img/home.svg" class="w-10" alt="" />
+          </div>
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+              Medan
+            </h2>
+            <p class="leading-relaxed text-base">
+              Medan Mall Jl. M. T. Haryono No.8, Kec. Medan Kota, Kota Medan,
+              Sumatera Utara 20212
+            </p>
+            <a class="mt-3 text-primary inline-flex items-center" href="#"
+              >Open on maps
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
+        >
+          <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+              Makassar
+            </h2>
+            <p class="leading-relaxed text-base">
+              Mall Ratu Indah Jl. DR. Ratulangi No.35, Mamajang Luar, Kec.
+              Mamajang, Kota Makassar, Sulawesi Selatan 90132
+            </p>
+            <a class="mt-3 text-primary inline-flex items-center" href="#"
+              >Open on maps
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+          <div
+            class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0"
+          >
+            <img src="./img/home.svg" class="w-10" alt="" />
+          </div>
+        </div>
+
+        <button
+          class="flex mx-auto mt-20 text-gray-500 underline border-0 py-2 px-8 text-lg"
+        >
+          See more
+        </button>
+      </div>
+    </section>
+    <section class="bg-secondary text-white p-8 flex flex-col items-center">
+      <h1 class="font-medium py-8 text-3xl text-center">
+        Join news letter to Get the best deals and promos
+      </h1>
+      <input
+        type="email"
+        class="bg-background p-2 mb-4 border-gray-600 rounded-md w-full sm:w-1/2 md:1/4 px-4 text-gray-900 outline-none"
+        placeholder="your email"
+      />
+      <input
+        type="submit"
+        value="Subscribe"
+        class="p-2 my-2 rounded-md bg-primary"
+      />
+    </section>
+    <footer class="text-gray-700 body-font">
+      <div
+        class="container px-8 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+        >
+          <img src="./img/logo.svg" alt="logo" />
+        </a>
+        <p
+          class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2020 tailwindcss —
+          <a
+            href="#"
+            class="text-gray-600 ml-1"
+            rel="noopener noreferrer"
+            target="_blank"
+            >modifed by @dikaMuharman</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
